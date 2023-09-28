@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        font-family:'Times New Roman', Times, serif ;
+        background-color: aqua;
+        height: 100px;
+        width: 200px;
+        font-size: 30px;
+    }
+</style>
+<script>
+    function rollDices(){
+        
+       var dice1 = Math.floor(Math.random() * 6) + 1;
+       var dice2 = Math.floor(Math.random() * 6) + 1;
+       var sum =  dice1 + dice2;
+        
+        document.getElementById("one").innerHTML = "Dice 1: " + dice1;
+        document.getElementById("two").innerHTML = "Dice 2: " + dice2;
+        document.getElementById("three").innerHTML ="Sum: " + sum;
+    }
+
+
+</script>
+<body>
+   
+<button onclick="rollDices()"> Roll 2 dices</button>
+<p id = "one"></p>
+<p id = "two"></p>
+<p id = "three"></p>
+</body>
+</html>
